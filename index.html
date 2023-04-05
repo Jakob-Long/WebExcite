@@ -1,635 +1,330 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <title>Webexcite</title>
+    <meta property="og:title" content="Soft UI Pro" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta property="twitter:card" content="summary_large_image" />
 
-<head>
-    <!--
-     - Roxy: Bootstrap template by GettTemplates.com
-     - https://gettemplates.co/roxy
-    -->
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>WebExcite</title>
-    <meta name="description" content="Roxy">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <style data-tag="reset-style-sheet">
+      html {  line-height: 1.15;}body {  margin: 0;}* {  box-sizing: border-box;  border-width: 0;  border-style: solid;}p,li,ul,pre,div,h1,h2,h3,h4,h5,h6,figure,blockquote,figcaption {  margin: 0;  padding: 0;}button {  background-color: transparent;}button,input,optgroup,select,textarea {  font-family: inherit;  font-size: 100%;  line-height: 1.15;  margin: 0;}button,select {  text-transform: none;}button,[type="button"],[type="reset"],[type="submit"] {  -webkit-appearance: button;}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner {  border-style: none;  padding: 0;}button:-moz-focus,[type="button"]:-moz-focus,[type="reset"]:-moz-focus,[type="submit"]:-moz-focus {  outline: 1px dotted ButtonText;}a {  color: inherit;  text-decoration: inherit;}input {  padding: 2px 4px;}img {  display: block;}html { scroll-behavior: smooth  }
+    </style>
+    <style data-tag="default-style-sheet">
+      html {
+        font-family: Open Sans;
+        font-size: 1rem;
+      }
 
-    <!-- External CSS -->
-    <link rel="stylesheet" href="vendor/bootstrap/bootstrap.min.css">
-    <link rel="stylesheet" href="vendor/select2/select2.min.css">
-    <link rel="stylesheet" href="vendor/owlcarousel/owl.carousel.min.css">
-    <link rel="stylesheet" href="vendor/lightcase/lightcase.css">
-     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+      body {
+        font-weight: 400;
+        font-style:normal;
+        text-decoration: none;
+        text-transform: none;
+        letter-spacing: normal;
+        line-height: 1.625;
+        color: var(--dl-color-secondary-400);
+        background-color: var(--dl-color-gray-white);
 
-    <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Lato:300,400|Work+Sans:300,400,700" rel="stylesheet">
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&amp;display=swap"
+      data-tag="font"
+    />
+    <style>
+      html * {
+          -webkit-font-smoothing: antialiased;
+      }
+      input::placeholder, textarea::placeholder {
+         color: #d2d6da;
+      }
+    </style>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div>
+      <link href="./home.css" rel="stylesheet" />
 
-    <!-- CSS -->
-    <link rel="stylesheet" href="css/style.min.css">
-    <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-
-    <!-- Modernizr JS for IE8 support of HTML5 elements and media queries -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
-
-</head>
-<body data-spy="scroll" data-target="#navbar" class="static-layout">
-	<nav id="header-navbar" class="navbar navbar-expand-lg py-4">
-    <div class="container">
-        <a class="navbar-brand d-flex align-items-center text-white" href="/">
-            <h3 class="font-weight-bolder mb-0">WEBEXCITE</h3>
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-nav-header" aria-controls="navbar-nav-header" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="lnr lnr-menu"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbar-nav-header">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="index.html">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="about.html">About</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="contact.html">Contact</a>
-                </li>
-                <li class="nav-item">
-                    <a id="side-search-open" class="nav-link" href="#">
-                        <span class="lnr lnr-magnifier"></span>
+      <div class="home-container">
+        <div data-role="Header" class="home-header">
+          <nav class="home-nav">
+            <div class="home-container01">
+              <a href="index.html" class="home-navlink Large">WebExcite</a>
+              <div class="home-menu">
+                <a href="index.html" class="home-navlink1 Large">Home</a>
+                <a href="contact-us.html" class="home-link Large">Contact Us</a>
+              </div>
+              <div class="home-container02">
+                <div class="home-container03">
+                  <div class="home-container04">
+                    <a href="#price" class="home-button button ButtonSmall">
+                      select plan
                     </a>
-                </li>
-                 <li class="nav-item only-desktop">
-                    <a class="nav-link" id="side-nav-open" href="#">
-                        <span class="lnr lnr-menu"></span>
-                    </a>
-                </li>
-            </ul>
-        </div>
-    </div>
-</nav>
-
-<div id="side-nav" class="sidenav">
-	<a href="javascript:void(0)" id="side-nav-close">&times;</a>
-	
-	<div class="sidenav-content">
-		<p>
-			<span class="fs-16 primary-color">(+1) (207) 999 - 1254</span>
-		</p>
-		<p>webexcitesolutions@gmail.com</p>
-	</div>
-</div><div id="side-search" class="sidenav">
-	<a href="javascript:void(0)" id="side-search-close">&times;</a>
-	<div class="sidenav-content">
-		<form action="">
-
-			<div class="input-group md-form form-sm form-2 pl-0">
-			  <input class="form-control my-0 py-1 red-border" type="text" placeholder="Search" aria-label="Search">
-			  <div class="input-group-append">
-			    <button class="input-group-text red lighten-3" id="basic-text1">
-			    	<span class="lnr lnr-magnifier"></span>
-			    </button>
-			  </div>
-			</div>
-
-		</form>
-	</div>
-	
-</div>	<div class="jumbotron d-flex align-items-center">
-  <div class="container text-center">
-    <h1 class="display-1 mb-4">WEB<br>EXE</h1>
-  </div>
-  <div class="rectangle-1"></div>
-  <div class="rectangle-2"></div>
-  <div class="rectangle-transparent-1"></div>
-  <div class="rectangle-transparent-2"></div>
-  <div class="circle-1"></div>
-  <div class="circle-2"></div>
-  <div class="circle-3"></div>
-  <div class="triangle triangle-1">
-  	<img src="img/obj_triangle.png" alt="">
-  </div>
-  <div class="triangle triangle-2">
-  	<img src="img/obj_triangle.png" alt="">
-  </div>
-  <div class="triangle triangle-3">
-  	<img src="img/obj_triangle.png" alt="">
-  </div>
-  <div class="triangle triangle-4">
-  	<img src="img/obj_triangle.png" alt="">
-  </div>
-</div>	<!-- Features Section-->
-<section id="features" class="bg-white">
-    <div class="container">
-        <div class="section-content">
-            <!-- Section Title -->
-            <div class="title-wrap mb-5" data-aos="fade-up">
-                <h2 class="section-title">
-                    Great Style, Great Prices
-                </h2>
-                <p class="section-sub-title">It's time to get excited about your next site!</p>
-            </div>
-            <!-- End of Section Title -->
-            <div class="row">
-                <!-- Features Holder-->
-                <div class="col-md-10 offset-md-1 features-holder">
-                    <div class="row">
-                        <!-- Features Item -->
-                        <div class="col-md-4 col-sm-12 text-center mt-4">
-                            <div class="shadow rounded feature-item p-4 mb-4" data-aos="fade-up">
-                                <div class="my-4">
-                                    <i class="lnr lnr-cog fs-40"></i>
-                                </div>
-                                <h4>Easy to Customize</h4>
-                                <p>Don't like how something looks? Want something else added? <br>We will fix that!</p>
-                            </div>
-                            <div class="shadow rounded feature-item p-4 mb-4" data-aos="fade-up">
-                                <div class="my-4">
-                                    <i class="lnr lnr-frame-contract fs-40"></i>
-                                </div>
-                                <h4>Pixel Perfect</h4>
-                                <p>We strive to make your next site perfect for you. Your imagination is your limit!</p>
-                            </div>
-                        </div>
-                        <!-- End of Feature Item -->
-                        <!-- Features Item -->
-                        <div class="col-md-4 col-sm-12 text-center">
-                            <div class="shadow rounded feature-item p-4 mb-4" data-aos="fade-up">
-                                <div class="my-4">
-                                    <i class="lnr lnr-bubble fs-40"></i>
-                                </div>
-                                <h4>Full Support</h4>
-                                <p>We are here for you and your site, even when the worst comes to worst.</p>
-                            </div>
-                            <div class="shadow rounded feature-item p-4 mb-4" data-aos="fade-up">
-                                <div class="my-4">
-                                    <i class="lnr lnr-magic-wand fs-40"></i>
-                                </div>
-                                <h4>Clean Design</h4>
-                                <p>We offer clean, minimal designs to make your site look the best it's ever been.</p>
-                            </div>
-                        </div>
-                        <!-- End of Feature Item -->
-                        <!-- Features Item -->
-                        <div class="col-md-4 col-sm-12 text-center mt-4">
-                            <div class="shadow rounded feature-item p-4 mb-4" data-aos="fade-up">
-                                <div class="my-4">
-                                    <i class="lnr lnr-clock fs-40"></i>
-                                </div>
-                                <h4>Ontime Project</h4>
-                                <p>We strive to get your site done on time, because who wants to wait for perfection?</p>
-                            </div>
-                            <div class="shadow rounded feature-item p-4 mb-4" data-aos="fade-up">
-                                <div class="my-4">
-                                    <i class="lnr lnr-thumbs-up fs-40"></i>
-                                </div>
-                                <h4>Built With Care</h4>
-                                <p>Tired of half done results? We will build your next site with care to ensure it's great!</p>
-                            </div>
-                        </div>
-                        <!-- End of Feature Item -->
-                    </div>
+                  </div>
                 </div>
-                <!-- End of Features Holder-->
-            </div>
-        </div>
-    </div>
-</section>
-<!-- End of Features Section-->	<section id="section-featurettes" class="featurettes overlay bg-fixed" style="background-image: url(img/bg.jpg);">
-
-    <div class="container">
-        <div class="section-content">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="row align-items-center text-white">
-
-                        <div class="col-md-4 offset-md-2 col-sm-6" data-aos="fade-right">
-                            <h4 class="mb-4">Capture the best of your work, and share it!</h4>
-                            <p>Your imagination is your limit, so let your next site share the best of you, your buisness, or your work.<br>Contact us to get started on your next site.</p>
-                            <button type="button" class="btn btn-outline-primary">CONTACT US</button>
-                        </div><!--/ .col-md-4.col-md-offset-2.col-sm-6 -->
-
-                        <div class="col-md-4 offset-md-right-2 col-sm-6" data-aos="flip-right">
-                            <img class="my-5" src="img/app-profile-mockup.png" alt="">
-                        </div><!--/ .col-md-4.col-md-offset-right-2.col-sm-6 -->
-
-                    </div><!--/ .featurettes-item -->
-
-                </div><!--/ .col-md-12 -->
-
-            </div><!--/ .row -->
-        </div>
-    </div><!--/ .container -->
-
-</section>	<section id="section-featurettes" class="featurettes">
-
-    <div class="container">
-        <div class="section-content">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="row align-items-center">
-
-                        <div class="col-md-4 offset-md-2 col-sm-6" data-aos="flip-left">
-                            <img class="my-5" src="img/app-profile-mockup.png" alt="">
-                        </div><!--/ .col-md-4.col-md-offset-right-2.col-sm-6 -->
-
-                        <div class="col-md-4 offset-md-right-2 col-sm-6" data-aos="fade-left">
-                            <h4 class="mb-4">Share your work the <b>exciting</b> way, and the <b>right</b> way.</h4>
-                            <p>It's time to get excited about your next website. With great designs, and affordable prices, we will get the job done right.</p>
-                            <div class="progress mb-3">
-                                <div class="progress-bar" role="progressbar" style="width: 95%;" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">HTML5 95%</div>
-                            </div>
-                            <div class="progress">
-                                <div class="progress-bar" role="progressbar" style="width: 90%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">CSS3 90%</div>
-                            </div>
-                        </div><!--/ .col-md-4.col-md-offset-2.col-sm-6 -->
-
-                    </div><!--/ .featurettes-item -->
-
-                </div><!--/ .col-md-12 -->
-
-            </div><!--/ .row -->
-        </div>
-    </div><!--/ .container -->
-
-</section>	<!-- Testimonial Section-->
-<section id="testimonial" class="section-padding bg-fixed bg-white overlay" style="background-image: url(img/bg-white.jpg);">
-    <div class="container">
-        <div class="section-content" data-aos="fade-up">
-            <div class="heading-section text-center">
-                <h2>
-                    User Testimonials
-                </h2>
-            </div>
-            <div class="row">
-                <!-- Testimonial -->
-                <div class="testi-content testi-carousel owl-carousel">
-                    <div class="testi-item text-center">
-                        <i class="testi-icon fa fa-3x fa-quote-left"></i>
-                        <h4 class="testi-text"><b>WEBEXCITE</b> is best website making buisness I've used so far.<br> It’s ideal for guys without coding knowledge like me!</h4>
-                        <div class="testi-meta-inner d-flex justify-content-center align-items-center">
-                            <div class="testi-img mr-2">
-                                <img src="img/testi-2.jpg" alt="">
-                            </div>
-                            <div class="testi-details">
-                                <p class="testi-author mb-0 font-weight-bolder">Jakob Long</p>
-                                <p class="testi-desc mb-0">Buisness Owner</p>
-                            </div>
-                        </div>
-                        
-                    </div>
-                    <div class="testi-item text-center">
-                        <i class="testi-icon fa fa-3x fa-quote-left"></i>
-                        <h4 class="testi-text">They delivered my site on time, just how I asked. <br> And I was shocked with how affordable it was.</h4>
-                        <div class="testi-meta-inner d-flex justify-content-center align-items-center">
-                            <div class="testi-img mr-2">
-                                <img src="img/testi-1.jpg" alt="">
-                            </div>
-                            <div class="testi-details">
-                                <p class="testi-author mb-0 font-weight-bolder">Olivia Spruce</p>
-                                <p class="testi-desc mb-0">Web Designer</p>
-                            </div>
-                        </div>
-                    </div>
-                     <!--<div class="testi-item text-center">
-                        <i class="testi-icon fa fa-3x fa-quote-left"></i>
-                        <h4 class="testi-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci <br> non doloribus ut, alias doloremque perspiciatis.</h4>
-                        <div class="testi-meta-inner d-flex justify-content-center align-items-center">
-                            <div class="testi-img mr-2">
-                                <img src="img/testi-1.jpg" alt="">
-                            </div>
-                            <div class="testi-details">
-                                <p class="testi-author mb-0 font-weight-bolder">John Doe</p>
-                                <p class="testi-desc mb-0">Web Designer</p>
-                            </div>
-                        </div>
-                    </div>-->
+                <div data-role="BurgerMenu" class="home-burger-menu">
+                  <svg viewBox="0 0 1024 1024" class="home-icon">
+                    <path
+                      d="M128 256h768v86h-768v-86zM128 554v-84h768v84h-768zM128 768v-86h768v86h-768z"
+                    ></path>
+                  </svg>
                 </div>
-                <!-- End of Testimonial -->
+              </div>
             </div>
+          </nav>
+          <div data-role="MobileMenu" class="home-mobile-menu">
+            <div class="home-top">
+              <a href="index.html" class="home-navlink2 Large">WebExite</a>
+              <div data-role="CloseMobileMenu" class="home-close-menu">
+                <svg viewBox="0 0 1024 1024" class="home-icon02">
+                  <path
+                    d="M810 274l-238 238 238 238-60 60-238-238-238 238-60-60 238-238-238-238 60-60 238 238 238-238z"
+                  ></path>
+                </svg>
+              </div>
+            </div>
+            <div class="home-mid">
+              <div class="home-menu1">
+                <a href="index.html" class="home-navlink3 Large">Home</a>
+                <span class="home-text Large">Contact Us</span>
+              </div>
+            </div>
+            <div class="home-bot">
+              <div class="primary-pink-button-container">
+                <button class="primary-pink-button-button button ButtonSmall">
+                  <span>buy now</span>
+                </button>
+              </div>
+            </div>
+          </div>
         </div>
-    </div>
-</section>
-<!-- End of Testimonial Section-->	<!-- Portfolio Section -->
-<!-- <section id="portfolio" class="bg-white">
-    <div class="container">
-        <div class="section-content">
-            
-            <div class="title-wrap">
-                <h2 class="section-title">Our <b>Awesome</b> Works</h2>
-                <p class="section-sub-title">Praesent commodo cursus magna, vel scelerisque nisl consectetur et. <br> pharetra augue. Donec id elit non mi.</p>
-            </div>
-            
-            <div class="row">
-                
-                <div class="col-md-12 portfolio-holder mt-3">
-                    
-                    <div class="filter-button-group btn-filter d-flex justify-content-center">
-                        <a tabindex="0" class="is-checked" data-filter="*">Show All</a>
-                        <a tabindex="0" data-filter=".minimalism">Minimalism</a>
-                        <a tabindex="0" data-filter=".vintage">Vintage</a>
-                        <a tabindex="0" data-filter=".creative">Creative</a>
+        <div class="home-hero">
+          <div class="home-container05">
+            <div class="home-card">
+              <h1 class="home-text01">
+                <span class="HeadingOne">WebExcite</span>
+                <br />
+              </h1>
+              <h1 class="home-text04 HeadingOne">Websites that wow</h1>
+              <span class="home-text05">
+                It's time to be excited about your next site, and get it built
+                the right way
+              </span>
+              <div class="home-container06">
+                <div class="home-container07">
+                  <a href="contact-us.html" class="home-navlink4">
+                    <div class="primary-pink-button-container">
+                      <button
+                        class="primary-pink-button-button button ButtonSmall"
+                      >
+                        <span>contact us</span>
+                      </button>
                     </div>
-                    
-                    <div class="grid-portfolio">
-                        <div class="grid-sizer"></div>
-                        <div class="gutter-sizer"></div>
-                        
-                        <div class="grid-item minimalism" data-aos="fade-up">
-                            <div class="grid-item-wrapper">
-                                <img src="img/photo-1.jpg" alt="portfolio-img" class="portfolio-item">
-                                <div class="grid-info">
-                                    <div class="grid-link d-flex justify-content-center">
-                                        <a class="img-pop" data-rel="lightcase" href="img/photo-1.jpg" title="Photo-1">
-                                            <span class="lnr lnr-move"></span>
-                                        </a>
-                                        <a class="ext-link" href="https://unsplash.com/" target="_blank">
-                                            <span class="lnr lnr-link"></span>
-                                        </a>
-                                    </div>
-                                    <div class="grid-title">
-                                        <h4>Camera</h4>
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
-                        
-                        <div class="grid-item vintage" data-aos="fade-up">
-                            <div class="grid-item-wrapper">
-                                <img src="img/photo-6.jpg" alt="portfolio-img" class="portfolio-item">
-                                <div class="grid-info">
-                                    <div class="grid-link d-flex justify-content-center">
-                                        <a class="img-pop" data-rel="lightcase" href="img/photo-6.jpg" title="Ship">
-                                            <span class="lnr lnr-move"></span>
-                                        </a>
-                                        <a class="ext-link" href="https://unsplash.com/" target="_blank">
-                                            <span class="lnr lnr-link"></span>
-                                        </a>
-                                    </div>
-                                    <div class="grid-title">
-                                        <h4>Flower</h4>
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
-                        
-                        <div class="grid-item creative grid-item-height" data-aos="fade-up">
-                            <div class="grid-item-wrapper">
-                                <img src="img/photo-2.jpg" alt="portfolio-img" class="portfolio-item">
-                                <div class="grid-info">
-                                    <div class="grid-link d-flex justify-content-center">
-                                        <a class="img-pop" data-rel="lightcase" href="img/photo-2.jpg" title="Tracy Portrait">
-                                            <span class="lnr lnr-move"></span>
-                                        </a>
-                                        <a class="ext-link" href="https://unsplash.com/" target="_blank">
-                                            <span class="lnr lnr-link"></span>
-                                        </a>
-                                    </div>
-                                    <div class="grid-title">
-                                        <h4>Breakfast</h4>
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
-                        
-                        <div class="grid-item creative" data-aos="fade-up">
-                            <div class="grid-item-wrapper">
-                                <img src="img/photo-7.jpg" alt="portfolio-img" class="portfolio-item">
-                                <div class="grid-info">
-                                    <div class="grid-link d-flex justify-content-center">
-                                        <a class="img-pop" data-rel="lightcase" href="img/photo-7.jpg" title="Guitar">
-                                            <span class="lnr lnr-move"></span>
-                                        </a>
-                                        <a class="ext-link" href="https://unsplash.com/" target="_blank">
-                                            <span class="lnr lnr-link"></span>
-                                        </a>
-                                    </div>
-                                    <div class="grid-title">
-                                        <h4>Chair</h4>
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
-                        
-                        <div class="grid-item vintage" data-aos="fade-up">
-                            <div class="grid-item-wrapper">
-                                <img src="img/photo-4.jpg" alt="portfolio-img" class="portfolio-item">
-                                <div class="grid-info">
-                                    <div class="grid-link d-flex justify-content-center">
-                                        <a class="img-pop" data-rel="lightcase" href="img/photo-4.jpg" title="Bookself">
-                                            <span class="lnr lnr-move"></span>
-                                        </a>
-                                        <a class="ext-link" href="https://unsplash.com/" target="_blank">
-                                            <span class="lnr lnr-link"></span>
-                                        </a>
-                                    </div>
-                                    <div class="grid-title">
-                                        <h4>Hidden Book</h4>
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
-                        
-                        <div class="grid-item creative" data-aos="fade-up">
-                            <div class="grid-item-wrapper">
-                                <img src="img/photo-9.jpg" alt="portfolio-img" class="portfolio-item">
-                                <div class="grid-info">
-                                    <div class="grid-link d-flex justify-content-center">
-                                        <a class="img-pop" data-rel="lightcase" href="img/photo-9.jpg" title="Guitar">
-                                            <span class="lnr lnr-move"></span>
-                                        </a>
-                                        <a class="ext-link" href="https://unsplash.com/" target="_blank">
-                                            <span class="lnr lnr-link"></span>
-                                        </a>
-                                    </div>
-                                    <div class="grid-title">
-                                        <h4>Red</h4>
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
-                        
-                    </div>
-                    
+                  </a>
                 </div>
-                
-            </div>
-        </div>
-    </div>
-</section> -->
-<!-- End of Portfolio Section -->	<!-- Client Section -->
-<!-- <section id="client" class="overlay bg-fixed" style="background-image: url(img/bg.jpg);">
-    <div class="container">
-        <div class="section-content" data-aos="fade-up">
-            <div class="row ">
-                <div class="col-md-12">
-                    
-                    <div class="title-wrap mb-5">
-                        <h2>Who love to <span> work</span> with us</h2>
-                    </div>
-                    
-                </div>
-                
-                <div class="col-md-12 client-holder">
-                    <div class="client-slider owl-carousel">
-                        <div class="client-item">
-                            <img class="img-responsive" src="img/client.png" alt=" ">
-                        </div>
-                        <div class="client-item">
-                            <img class="img-responsive" src="img/client.png" alt=" ">
-                        </div>
-                        <div class="client-item">
-                            <img class="img-responsive" src="img/client.png" alt=" ">
-                        </div>
-                        <div class="client-item">
-                            <img class="img-responsive" src="img/client.png" alt=" ">
-                        </div>
-                        <div class="client-item">
-                            <img class="img-responsive" src="img/client.png" alt=" ">
-                        </div>
-                        <div class="client-item">
-                            <img class="img-responsive" src="img/client.png" alt=" ">
-                        </div>
-                    </div>
-                    
-                </div>
-            </div>
-        </div>
-</section> -->
-<!-- End of Client Section -->	<!-- Reservation Section -->
-<section id="reservation" class="bg-white section-content">
-    <div class="container">
-        <div class="row align-items-center">
-            <div class="col-lg-5 offset-lg-1 mb-5 mb-lg-0" data-aos="fade-right">
-                <div class="bg-white p-5 shadow">
-                    <div class="heading-section text-center">
-                        <h2 class="mb-4">
-                            Contact Us
-                        </h2>
-                    </div>
-                    <form method="post" name="contact-us" action="">
-                        <div class="row">
-                            <div class="col-md-12 form-group">
-                                <center><h4>Phone:</h4>
-                                <h5 style="color: #ff00cc;">(207) 999 - 1254</h5></center>
-                                <!-- <input type="text" class="form-control" id="name" name="name" placeholder="Name"> -->
-                            </div>
-                            <div class="col-md-12 form-group">
-                                <center><h4>Email:</h4>
-                                <h5><a href="mailto:webexcite@gmail.com">webexcitesolutions@gmail.com</a></h5></center>
-                                <!-- <input type="text" class="form-control" id="email" name="email" placeholder="Email"> -->
-                            </div>
-                            <!-- <div class="col-md-12 form-group">
-                                <input type="number" class="form-control" id="phoneNumber" name="phoneNumber" placeholder="Phone">
-                            </div>
-                            <div class="col-md-12 form-group">
-                                <input type="text" class="form-control" id="websiteUrl" name="websiteUrl" placeholder="Website">
-                            </div>
-                            <div class="col-md-12 form-group">
-                                <textarea class="form-control" id="message" name="message" rows="6" placeholder="Your Message ..."></textarea>
-                            </div>
-                            <div class="col-md-12 text-center">
-                                <button class="btn btn-primary btn-shadow btn-lg" type="submit" name="submit">Send Message</button>
-                            </div> -->
-                        </div>
-                    </form>
-                </div>
-            </div>
-            <div class="col-lg-4 offset-lg-1" data-aos="fade-left">
-                <h2 class="mb-4">
-                    Best solution to create any website. Pay once.
-                </h2>
-                <p class="mb-4">It's time to get excited about your next site! Just tell us what you want and how you want it. Check us out on fiverr to start your order!</p>
-
-                <ul class="list-inline py-2">
-                    <li class="list-inline-item text-center">
-                        <span class="lnr fs-40 lnr-rocket"></span>
-                        <p>Fast delivery</p>
-                    </li>
-                    <li class="list-inline-item text-center">
-                        <span class="lnr fs-40 lnr-magic-wand"></span>
-                        <p>Awesome design</p>
-                    </li>
-                    <li class="list-inline-item text-center">
-                        <span class="lnr fs-40 lnr-cog"></span>
-                        <p>Easy to customize</p>
-                    </li>
-                </ul>
-
-                <a href="https://www.fiverr.com/webexcite" class="btn btn-link p-0">
-                    <span>PURCHASE NOW</span>
-                    <span class="lnr lnr-arrow-right"></span>
+                <a href="#features" class="home-link1">
+                  <div class="outline-gray-button-container">
+                    <button
+                      class="outline-gray-button-button button ButtonSmall"
+                    >
+                      <span>read more</span>
+                    </button>
+                  </div>
                 </a>
+              </div>
             </div>
+          </div>
         </div>
-        
-    </div>
-</section>
-<!-- End of Reservation Section -->	<!-- Features Section-->
-<section id="cta" class="bg-fixed overlay" style="background-image: url(img/bg.jpg);">
-    <div class="container">
-        <div class="section-content" data-aos="fade-up">
-            <div class="row">
-                <div class="col-md-12 text-center">
-                    <h2 class="mb-2">Make a beautiful website, or million of them</h2>
-                    <p>It's time to get excited about your next site!</p>
-                    <a class="btn btn-outline-primary btn-lg" href="https://www.fiverr.com/webexcite">Get Your Site</a>
+        <img
+          alt="image"
+          src="public/playground_assets/curved6-1500h.jpg"
+          class="home-image"
+        />
+        <section id="features" class="home-features">
+          <div class="home-container08">
+            <img
+              alt="image"
+              src="public/playground_assets/cube1.svg"
+              class="home-image1"
+            />
+            <h5 class="home-text06 HeadingThree">Design</h5>
+            <span class="home-text07">
+              Choose the best design for your next website.
+            </span>
+          </div>
+          <div class="home-container09">
+            <img
+              alt="image"
+              src="public/playground_assets/person1.svg"
+              class="home-image2"
+            />
+            <h5 class="home-text08 HeadingThree">Support</h5>
+            <span class="home-text09">
+              <span>We're here for you and your site, even in the worst.</span>
+              <br />
+            </span>
+          </div>
+          <div class="home-container10">
+            <img
+              alt="image"
+              src="public/playground_assets/rocket1.svg"
+              class="home-image3"
+            />
+            <h5 class="home-heading">Customize</h5>
+            <span class="home-text12">
+              Tell us how you want your site, and we'll make it represent you.
+            </span>
+          </div>
+          <div class="home-container11">
+            <img
+              alt="image"
+              src="public/playground_assets/credit%20card1.svg"
+              class="home-image4"
+            />
+            <h5 class="home-text13">Compatible</h5>
+            <span class="home-text14">
+              Your website will be fully compatible on any device.
+            </span>
+          </div>
+        </section>
+        <section id="price" class="home-testimonials">
+          <img
+            alt="image"
+            src="public/playground_assets/waves-white.svg"
+            class="home-image5"
+          />
+          <img
+            alt="image"
+            src="public/playground_assets/top.svg"
+            class="home-top-wave-image"
+          />
+        </section>
+        <section class="home-contaier">
+          <div class="home-container12">
+            <div class="home-container13">
+              <svg viewBox="0 0 1024 1024" class="home-icon04">
+                <path
+                  d="M363.722 722.052l41.298-57.816-45.254-45.256-57.818 41.296c-10.722-5.994-22.204-10.774-34.266-14.192l-11.682-70.084h-64l-11.68 70.086c-12.062 3.418-23.544 8.198-34.266 14.192l-57.818-41.298-45.256 45.256 41.298 57.816c-5.994 10.72-10.774 22.206-14.192 34.266l-70.086 11.682v64l70.086 11.682c3.418 12.060 8.198 23.544 14.192 34.266l-41.298 57.816 45.254 45.256 57.818-41.296c10.722 5.994 22.204 10.774 34.266 14.192l11.682 70.084h64l11.68-70.086c12.062-3.418 23.544-8.198 34.266-14.192l57.818 41.296 45.254-45.256-41.298-57.816c5.994-10.72 10.774-22.206 14.192-34.266l70.088-11.68v-64l-70.086-11.682c-3.418-12.060-8.198-23.544-14.192-34.266zM224 864c-35.348 0-64-28.654-64-64s28.652-64 64-64 64 28.654 64 64-28.652 64-64 64zM1024 384v-64l-67.382-12.25c-1.242-8.046-2.832-15.978-4.724-23.79l57.558-37.1-24.492-59.128-66.944 14.468c-4.214-6.91-8.726-13.62-13.492-20.13l39.006-56.342-45.256-45.254-56.342 39.006c-6.512-4.766-13.22-9.276-20.13-13.494l14.468-66.944-59.128-24.494-37.1 57.558c-7.812-1.892-15.744-3.482-23.79-4.724l-12.252-67.382h-64l-12.252 67.382c-8.046 1.242-15.976 2.832-23.79 4.724l-37.098-57.558-59.128 24.492 14.468 66.944c-6.91 4.216-13.62 8.728-20.13 13.494l-56.342-39.006-45.254 45.254 39.006 56.342c-4.766 6.51-9.278 13.22-13.494 20.13l-66.944-14.468-24.492 59.128 57.558 37.1c-1.892 7.812-3.482 15.742-4.724 23.79l-67.384 12.252v64l67.382 12.25c1.242 8.046 2.832 15.978 4.724 23.79l-57.558 37.1 24.492 59.128 66.944-14.468c4.216 6.91 8.728 13.618 13.494 20.13l-39.006 56.342 45.254 45.256 56.342-39.006c6.51 4.766 13.22 9.276 20.13 13.492l-14.468 66.944 59.128 24.492 37.102-57.558c7.81 1.892 15.742 3.482 23.788 4.724l12.252 67.384h64l12.252-67.382c8.044-1.242 15.976-2.832 23.79-4.724l37.1 57.558 59.128-24.492-14.468-66.944c6.91-4.216 13.62-8.726 20.13-13.492l56.342 39.006 45.256-45.256-39.006-56.342c4.766-6.512 9.276-13.22 13.492-20.13l66.944 14.468 24.492-59.13-57.558-37.1c1.892-7.812 3.482-15.742 4.724-23.79l67.382-12.25zM672 491.2c-76.878 0-139.2-62.322-139.2-139.2s62.32-139.2 139.2-139.2 139.2 62.322 139.2 139.2c0 76.878-62.32 139.2-139.2 139.2z"
+                ></path>
+              </svg>
+            </div>
+            <h2 class="home-text15 HeadingTwo">Beware The Components</h2>
+            <h3 class="home-text16">
+              <span>Choosing the Right Plan</span>
+              <br class="HeadingTwo" />
+            </h3>
+          </div>
+          <div class="home-divider"></div>
+          <div class="home-pricing">
+            <div class="home-container14">
+              <div class="home-pricing-card">
+                <span class="home-text19">DESIGNER</span>
+                <div class="home-container15">
+                  <div class="home-container16">
+                    <span class="home-text20">
+                      <span>$</span>
+                      <span></span>
+                    </span>
+                    <span class="home-text23">30</span>
+                    <span class="home-text24">/hourly</span>
+                  </div>
+                  <span class="home-text25">✔ Design your website</span>
+                  <span class="home-text26">✔ Access to source code</span>
+                  <span class="home-text27">✔ Download code</span>
                 </div>
+                <a href="contact-us.html" class="home-navlink5 button">
+                  Learn More
+                </a>
+              </div>
+              <div class="home-pricing-card1">
+                <span class="home-text28">HOSTING</span>
+                <div class="home-container17">
+                  <span class="home-text29">
+                    <span>$</span>
+                    <span></span>
+                  </span>
+                  <span class="home-text32">75</span>
+                  <span class="home-text33">/ monthly</span>
+                </div>
+                <div class="home-container18">
+                  <span class="home-text34">✔ Design your website</span>
+                  <span class="home-text35">✔ Host website</span>
+                  <span class="home-text36">✔ Assign custom domain</span>
+                  <span class="home-text37">✔ Domain re-registration</span>
+                </div>
+                <a href="contact-us.html" class="home-navlink6 button">
+                  Learn More
+                </a>
+              </div>
+              <div class="home-pricing-card2">
+                <span class="home-text38">UPDATER</span>
+                <div class="home-container19">
+                  <span class="home-text39">
+                    <span>$</span>
+                    <span></span>
+                  </span>
+                  <span class="home-text42">90</span>
+                  <span class="home-text43"><span>/ monthly</span></span>
+                </div>
+                <div class="home-container20">
+                  <span class="home-text45">✔ Design your website</span>
+                  <span class="home-text46">✔ Host website with domain</span>
+                  <span class="home-text47">✔ Version history</span>
+                </div>
+                <a href="contact-us.html" class="home-navlink7 button">
+                  Learn More
+                </a>
+              </div>
             </div>
-        </div>
+          </div>
+        </section>
+        <footer class="home-footer">
+          <img
+            alt="image"
+            src="public/playground_assets/waves-white.svg"
+            class="home-image6"
+          />
+        </footer>
+        <footer class="home-footer1">
+          <img
+            src="public/playground_assets/logo%20%5B1%5D1-200h.png"
+            alt="image"
+            class="home-image7"
+          />
+          <span class="home-text48">
+            © 2023 Webexcite, All Rights Reserved.
+          </span>
+          <div class="home-icon-group">
+            <a
+              href="https://www.instagram.com/webexcite/"
+              target="_blank"
+              rel="noreferrer noopener"
+              class="home-link2"
+            >
+              <svg viewBox="0 0 877.7142857142857 1024" class="home-icon06">
+                <path
+                  d="M585.143 512c0-80.571-65.714-146.286-146.286-146.286s-146.286 65.714-146.286 146.286 65.714 146.286 146.286 146.286 146.286-65.714 146.286-146.286zM664 512c0 124.571-100.571 225.143-225.143 225.143s-225.143-100.571-225.143-225.143 100.571-225.143 225.143-225.143 225.143 100.571 225.143 225.143zM725.714 277.714c0 29.143-23.429 52.571-52.571 52.571s-52.571-23.429-52.571-52.571 23.429-52.571 52.571-52.571 52.571 23.429 52.571 52.571zM438.857 152c-64 0-201.143-5.143-258.857 17.714-20 8-34.857 17.714-50.286 33.143s-25.143 30.286-33.143 50.286c-22.857 57.714-17.714 194.857-17.714 258.857s-5.143 201.143 17.714 258.857c8 20 17.714 34.857 33.143 50.286s30.286 25.143 50.286 33.143c57.714 22.857 194.857 17.714 258.857 17.714s201.143 5.143 258.857-17.714c20-8 34.857-17.714 50.286-33.143s25.143-30.286 33.143-50.286c22.857-57.714 17.714-194.857 17.714-258.857s5.143-201.143-17.714-258.857c-8-20-17.714-34.857-33.143-50.286s-30.286-25.143-50.286-33.143c-57.714-22.857-194.857-17.714-258.857-17.714zM877.714 512c0 60.571 0.571 120.571-2.857 181.143-3.429 70.286-19.429 132.571-70.857 184s-113.714 67.429-184 70.857c-60.571 3.429-120.571 2.857-181.143 2.857s-120.571 0.571-181.143-2.857c-70.286-3.429-132.571-19.429-184-70.857s-67.429-113.714-70.857-184c-3.429-60.571-2.857-120.571-2.857-181.143s-0.571-120.571 2.857-181.143c3.429-70.286 19.429-132.571 70.857-184s113.714-67.429 184-70.857c60.571-3.429 120.571-2.857 181.143-2.857s120.571-0.571 181.143 2.857c70.286 3.429 132.571 19.429 184 70.857s67.429 113.714 70.857 184c3.429 60.571 2.857 120.571 2.857 181.143z"
+                ></path>
+              </svg>
+            </a>
+            <a
+              href="https://www.facebook.com/profile.php?id=100091489156080"
+              target="_blank"
+              rel="noreferrer noopener"
+              class="home-link3"
+            >
+              <svg viewBox="0 0 602.2582857142856 1024" class="home-icon08">
+                <path
+                  d="M548 6.857v150.857h-89.714c-70.286 0-83.429 33.714-83.429 82.286v108h167.429l-22.286 169.143h-145.143v433.714h-174.857v-433.714h-145.714v-169.143h145.714v-124.571c0-144.571 88.571-223.429 217.714-223.429 61.714 0 114.857 4.571 130.286 6.857z"
+                ></path>
+              </svg>
+            </a>
+          </div>
+        </footer>
+      </div>
     </div>
-</section>
-<!-- End of Features Section--></div>
-<footer class="mastfoot my-3">
-    <div class="inner container">
-         <div class="row">
-         	<div class="col-lg-4 col-md-12 d-flex align-items-center">
-         		
-         	</div>
-         	<div class="col-lg-4 col-md-12 d-flex align-items-center">
-         		<p class="mx-auto text-center mb-0">&copy; 2022 WebExcite.</p>
-         	</div>
-           
-            <!--
-            <div class="col-lg-4 col-md-12">
-            	<nav class="nav nav-mastfoot justify-content-center">
-	                <a class="nav-link" href="#">
-	                	<i class="fab fa-facebook-f"></i>
-	                </a>
-	                <a class="nav-link" href="#">
-	                	<i class="fab fa-twitter"></i>
-	                </a>
-	                <a class="nav-link" href="#">
-	                	<i class="fab fa-instagram"></i>
-	                </a>
-	                <a class="nav-link" href="#">
-	                	<i class="fab fa-linkedin"></i>
-	                </a>
-	                <a class="nav-link" href="#">
-	                	<i class="fab fa-youtube"></i>
-	                </a>
-	            </nav>
-            </div>-->
-            
-        </div>
-    </div>
-</footer>	<!-- External JS -->
-	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
-	<script src="vendor/bootstrap/popper.min.js"></script>
-	<script src="vendor/bootstrap/bootstrap.min.js"></script>
-	<script src="vendor/select2/select2.min.js "></script>
-	<script src="vendor/owlcarousel/owl.carousel.min.js"></script>
-	<script src="vendor/stellar/jquery.stellar.js" type="text/javascript" charset="utf-8"></script>
-	<script src="vendor/isotope/isotope.min.js"></script>
-	<script src="vendor/lightcase/lightcase.js"></script>
-	<script src="vendor/waypoints/waypoint.min.js"></script>
-	 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-	 
-	<!-- Main JS -->
-	<script src="js/app.min.js "></script>
-	<script src="//localhost:35729/livereload.js"></script>
-</body>
+    <script src="https://unpkg.com/@teleporthq/teleport-custom-scripts"></script>
+  </body>
 </html>

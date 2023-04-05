@@ -1,0 +1,17 @@
+.burger-menu-burger-menu {
+  display: none;
+  position: relative;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.burger-menu-icon {
+  width: 24px;
+  height: 24px;
+  margin-left: var(--dl-space-space-unit);
+}
+@media(max-width: 767px) {
+  .burger-menu-burger-menu {
+    display: flex;
+  }
+}
